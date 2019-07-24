@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Calcluter</title>
+    <style>
+
+      input[type='button'] {
+        height: 50px;
+        width: 60px;
+        margin:auto;
+        font-size: 25px;
+        border-radius: 10px;
+        margin-top: 5px;
+        background-color: black;
+        color:#fff;
+        outline:none;
+        /*border: none;*/
+      }
+
+      form{
+        margin:auto;
+        width:250px;
+        background-color:#808080 ;
+        padding:12px 15px 10px 10px;
+      }
+
+      #cal{
+        margin:auto;
+      }
+
+      input[type="text"]{
+        width: 250px;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 5px;
+        padding:3px;
+      }
+
+      small{
+        color:#fff;
+        text-shadow: #000;
+      }
+
+      .oprt{
+        background-color: rgb(247, 146, 4) !important;
+      }
+
+    </style>
+    
+  </head>
+  <body>
+
+    <form name="calculator">
+
+        <div id="calculator">
+        <input type="text" name="display" onfocus="myFunction(this)">
+
+        <table>
+          <tr>
+            <td><input type="button" value = "1" onclick="calculator.display.value += '1'"></td>
+            <td><input type="button" value = "2" onclick="calculator.display.value += '2'"></td>
+            <td><input type="button" value = "3" onclick="calculator.display.value += '3'"></td>
+            <td><input class="oprt" type="button" value = "+" onclick="calculator.display.value += '+'"></td>
+          </tr>
+
+          <tr>
+            <td><input type="button" value = "4" onclick="calculator.display.value += '4'"></td>
+            <td><input type="button" value = "5" onclick="calculator.display.value += '5'"></td>
+            <td><input type="button" value = "6" onclick="calculator.display.value += '6'"></td>
+            <td><input class="oprt" type="button" value = "*" onclick="calculator.display.value += '*'"></td>
+          </tr>
+
+          <tr>
+            <td><input type="button" value = "7" onclick="calculator.display.value += '7'"></td>
+            <td><input type="button" value = "8" onclick="calculator.display.value += '8'"></td>
+            <td><input type="button" value = "9" onclick="calculator.display.value += '9'"></td>
+            <td><input class="oprt" type="button" value = "/" onclick="calculator.display.value += '/'"></td>
+          </tr>
+
+          <tr>
+            <td><input class="oprt" type="button" value = "C" onclick="calculator.display.value = ''"></td>
+            <td><input class="oprt" type="button" value = "0" onclick="calculator.display.value += '0'"></td>
+            <td><input class="oprt" type="button" value = "=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+            <td><input class="oprt" type="button" value = "-" onclick="calculator.display.value += '-'"></td>
+          </tr>
+
+        </table>
+        <small>Developed by: Ankur Singh</small>
+      </div>
+    </form>
+    
+
+   
+  </body>
+</html>
